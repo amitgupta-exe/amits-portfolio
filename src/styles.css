@@ -1,0 +1,174 @@
+/* General Styles */
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Product Sans', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    width: 5%;
+    background: transparent;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+
+.sidebar ul {
+    height: 60%;
+    background-color: #ffffff;
+    list-style-type: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sidebar li {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+
+    background-color: rgb(0, 0, 0);
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    /* Smooth color transition on hover */
+}
+
+.sidebar a:hover {
+    color: #ff6347;
+}
+
+/* Full Screen Section Styles */
+.full-screen-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    /* Full viewport height */
+    align-items: center;
+    justify-content: space-evenly; 
+     
+    /* Leave space for the sidebar */
+}
+
+.text-container {
+    max-width: 50%;
+}
+
+.text-container h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.text-container h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+}
+
+/* Image Styles */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section Styles */
+.section {
+    width: 100%;
+
+    height: 100vh;
+
+    /* Leave space for the sidebar */
+}
+
+.vertical-sections {
+    /* padding: 40px; */
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.section{
+    position: relative;
+}
+.section h2{
+position: absolute;
+top: 2rem;
+left: 2rem;
+z-index: 1;
+}
+
+.vertical-section {
+    width: 33%;
+    /* Each section takes equal width */
+    position: relative;
+    /* Space between sections */
+    transition: flex 0.3s ease;
+    /* Smooth transition for flex change */
+    overflow: hidden;
+    /* Hide overflow */
+}
+
+.vertical-section:hover {
+        width: 80%;
+        transition: ease 0.1s;
+    /* Expand on hover */
+}
+
+.vertical-section:not(:hover) {
+    flex: 1;
+    /* Compress non-hovered sections */
+}
+
+.video {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.card {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card p {
+    margin: 0 0 5px 0;
+    /* Spacing for description */
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    /* Space between links */
+}
+
+.card a:hover {
+    color: #ff6347;
+    /* Change color on hover */
+}
