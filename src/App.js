@@ -14,11 +14,11 @@ const Sidebar = () => {
   return (
     <nav className="sidebar">
       <ul>
-        <li> <p>Me</p><a href="#me"></a></li>
-        <li><p>ML/AI</p><a href="#ml-ai"></a></li>
-        <li><p>Web Development</p><a href="#webdev"></a></li>
-        <li><p>Game Development</p><a href="#gamedev"></a></li>
-        <li><p>Data Analysis</p><a href="#data-analysis"></a></li>
+        <li><a href="#me">Me</a></li>
+        <li><a href="#ml-ai">ML/AI</a></li>
+        <li><a href="#webdev">Web Development</a></li>
+        <li><a href="#gamedev">Game Development</a></li>
+        <li><a href="#data-analysis">Data Analysis</a></li>
       </ul>
     </nav>
   );
@@ -37,25 +37,30 @@ const MainContent = () => {
 };
 
 const Me = () => (
+
   <section className="full-screen-section" id="me">
+
     <div className="text-container">
       <h1>Amit Gupta</h1>
       <h2>Software Engineer / Data Scientist</h2>
       <p>Bsc - Computer Science</p>
       <p>Msc - Data Science and Big Data Analytics</p>
       <div className="socials">
-        <a target='_blank' href="https://www.linkedin.com/in/amit-gupta-609306264/">LinkedIn | </a>
-        <a target='_blank' href="https://github.com/amitgupta-exe">GitHub</a>
+        <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/amit-gupta-609306264/">LinkedIn | </a>
+        <a target='_blank' rel="noreferrer" href="https://github.com/amitgupta-exe">GitHub</a>
       </div>
 
     </div>
     <div className="image-container">
-      <img src="img.png" alt="Amit Gupta" />
+      <img src="/img.png" alt="Amit Gupta" />
     </div>
   </section>
 );
+
+
+
 const mlAiUrls = [
-  { videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', description: 'ML/AI Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
+  { videoUrl: "images//image.png", description: 'ML/AI Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
   { videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', description: 'ML/AI Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
   { videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4', description: 'ML/AI Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
 ];
@@ -90,10 +95,11 @@ const Section = ({ title, id, cards }) => {
       <div className="vertical-sections">
         {cards.map((card) => (
           <div className="vertical-section" key={card.videoUrl}>
-            <img src={card.videoUrl} alt="" srcset="" />
+            <img src={card.videoUrl} alt="card" srcSet="" />
+            <p>{card.description}</p>
+            <p className='project-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
             <div className="card">
-              <p>{card.description}</p>
               <a href={card.github} target="_blank" rel="noopener noreferrer">GitHub</a>
               <a href={card.website} target="_blank" rel="noopener noreferrer">Website</a>
             </div>
