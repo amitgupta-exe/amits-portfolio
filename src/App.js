@@ -29,8 +29,6 @@ const MainContent = () => {
     <main className='main-content'>
       <Me />
       <MLAI />
-      <WebDev />
-      <GameDev />
       <DataAnalysis />
     </main>
   );
