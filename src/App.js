@@ -47,9 +47,6 @@ const Me = () => (
       </div>
 
     </div>
-    <div className="image-container">
-      <img src="/img.png" alt="Amit Gupta" />
-    </div>
   </section>
 );
 
