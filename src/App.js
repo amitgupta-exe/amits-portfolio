@@ -49,10 +49,6 @@ const Me = () => (
         <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/amit-gupta-609306264/">LinkedIn | </a>
         <a target='_blank' rel="noreferrer" href="https://github.com/amitgupta-exe">GitHub</a>
       </div>
-
-    </div>
-    <div className="image-container">
-      <img src="/img.png" alt="Amit Gupta" />
     </div>
   </section>
 );
