@@ -123,20 +123,21 @@ body {
   justify-content: space-evenly;
   background-color: #e4e4e4;
   filter: blur(0px);
-  img{
+  video{
     width: 90%;
     height: 25r;
-    background-color: #c2c2c2;
+
+    color: #555555;
   }
 }
 
 .vertical-section:hover {
   flex: 10;
   transition: ease 1s;
-  img{
+  video{
     width: 90%;
     height: 25rem;
-    background-color: #c2c2c2;
+
   }
 }
 

@@ -26,11 +26,25 @@ const MainContent = () => {
   return (
     <main className='main-content'>
       <Me />
+      <WebDev />
       <MLAI />
+      <GameDev/>
       <DataAnalysis />
+      <Footer />
     </main>
   );
 };
+
+const Footer = () => {
+  return (
+    <main className='main-content'>
+      <h1>
+        Footer
+      </h1>
+    </main>
+  );
+};
+
 
 const Me = () => (
 
@@ -53,19 +67,19 @@ const Me = () => (
 
 
 const mlAiUrls = [
-  { videoUrl: "images//image.png", description: 'ML/AI Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
+  { videoUrl: "images/image.png", description: 'ML/AI Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
   { videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', description: 'ML/AI Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
   { videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4', description: 'ML/AI Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
 ];
 
 const webDevUrls = [
-  { videoUrl: 'your-webdev-video-url-1.mp4', description: 'Web Dev Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
-  { videoUrl: 'your-webdev-video-url-2.mp4', description: 'Web Dev Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
-  { videoUrl: 'your-webdev-video-url-3.mp4', description: 'Web Dev Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
+  { videoUrl: 'your-webdev-video-url-1.mp4', description: 'Web Dev Project 1', github: 'https://github.com/amitgupta-exe/loremipsum', website: 'https://amitgupta-exe.github.io/lipsumghpage/' },
+  { videoUrl: 'your-webdev-video-url-2.mp4', description: 'Web Dev Project 2', github: 'https://github.com/project2', website: '' },
+  { videoUrl: 'your-webdev-video-url-3.mp4', description: 'Web Dev Project 3', github: 'https://github.com/project3', website: '' },
 ];
 
 const gameDevUrls = [
-  { videoUrl: "/image.png", description: 'Snake Game p5', github: 'https://github.com/amitgupta-exe/snakegamep5', website: 'https://amitgupta-exe.github.io/snakegamep5' },
+  { videoUrl: 'https://github.com/amitgupta-exe/amits-portfolio/blob/main/public/snakegamep5video.mp4', description: 'Snake Game p5', github: 'https://github.com/amitgupta-exe/snakegamep5', website: 'https://amitgupta-exe.github.io/snake-game-p5' },
   { videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', description: 'Game Dev Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
   { videoUrl: 'your-gamedev-video-url-3.mp4', description: 'Game Dev Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
 ];
@@ -88,7 +102,12 @@ const Section = ({ title, id, cards }) => {
       <div className="vertical-sections">
         {cards.map((card) => (
           <div className="vertical-section" key={card.videoUrl}>
-            <img src={card.videoUrl} alt="card" srcSet="" />
+            {/* <img src={card.videoUrl} alt="card" srcSet="" /> */}
+
+              <video>
+                <source src={card.videoUrl} type="video/mp4" />
+              </video>
+
             <p>{card.description}</p>
             <p className='project-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
