@@ -79,7 +79,7 @@ const webDevUrls = [
 ];
 
 const gameDevUrls = [
-  { url: '', title: 'Snake Game p5', description: '', github: 'https://github.com/amitgupta-exe/snakegamep5', website: 'https://amitgupta-exe.github.io/snake-game-p5' },
+  { url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/src/assets/images/snake.jpg', title: 'Snake Game p5', description: '', github: 'https://github.com/amitgupta-exe/snakegamep5', website: 'https://amitgupta-exe.github.io/snake-game-p5' },
   { url: '', title: '', description: 'Game Dev Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
   { url: '', title: '', description: 'Game Dev Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
 ];
