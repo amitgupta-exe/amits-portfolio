@@ -28,7 +28,7 @@ const MainContent = () => {
       <Me />
       <WebDev />
       <MLAI />
-      <GameDev/>
+      <GameDev />
       <DataAnalysis />
       <Footer />
     </main>
@@ -38,9 +38,9 @@ const MainContent = () => {
 const Footer = () => {
   return (
     <main className='main-content'>
-      <h1>
-        Footer
-      </h1>
+      <div className='footer'>
+        <p>Created by Amit Gupta</p>
+      </div>
     </main>
   );
 };
@@ -64,7 +64,11 @@ const Me = () => (
   </section>
 );
 
-
+const webDevUrls = [
+  { url: '', title: 'Cryptonite', description: 'Encrypt/Decrypt - React, Node Modules', github: 'https://github.com/amitgupta-exe/loremipsum', website: 'https://amitgupta-exe.github.io/lipsumghpage/' },
+  { url: '', title: 'LoremIpsum', description: 'Multi typeface Lorem Ipsum - React, NLTK', github: 'https://github.com/amitgupta-exe/loremipsum', website: 'https://amitgupta-exe.github.io/lipsumghpage/' },
+  { url: '', title: '', description: 'Web Dev Project 3', github: 'https://github.com/project3', website: '' },
+];
 
 const mlAiUrls = [
   { url: '', title: '', description: 'ML/AI Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
@@ -72,14 +76,10 @@ const mlAiUrls = [
   { url: '', title: '', description: 'ML/AI Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
 ];
 
-const webDevUrls = [
-  { url: '', title: '', description: 'Web Dev Project 1', github: 'https://github.com/amitgupta-exe/loremipsum', website: 'https://amitgupta-exe.github.io/lipsumghpage/' },
-  { url: '', title: '', description: 'Web Dev Project 2', github: 'https://github.com/project2', website: '' },
-  { url: '', title: '', description: 'Web Dev Project 3', github: 'https://github.com/project3', website: '' },
-];
+
 
 const gameDevUrls = [
-  { url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/src/assets/images/snake.jpg', title: 'Snake Game p5', description: '', github: 'https://github.com/amitgupta-exe/snakegamep5', website: 'https://amitgupta-exe.github.io/snake-game-p5' },
+  { url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/snake.jpg', title: 'Snake Game p5', description: '', github: 'https://github.com/amitgupta-exe/snakegamep5', website: 'https://amitgupta-exe.github.io/snake-game-p5' },
   { url: '', title: '', description: 'Game Dev Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
   { url: '', title: '', description: 'Game Dev Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
 ];
@@ -99,19 +99,15 @@ const Section = ({ title, id, cards }) => {
   return (
     <div className="section" id={id}>
       <h2>{title}</h2>
-      <div className="vertical-sections">
+      <div className="cards">
         {cards.map((card) => (
-          <div className="vertical-section" key={card.videoUrl}>
-            <img src={card.videoUrl} alt="card" srcSet="" />
-
-              {/* <video>
-                <source src={card.videoUrl} type="video/mp4" />
-              </video> */}
-
-            <p>{card.description}</p>
-            <p className='project-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-            <div className="card">
+          <div className="card" key={card.videoUrl}>
+            <img className='card-display' src={card.url} alt="card" srcSet="" />
+            <div>
+              <p className='card-title'>{card.title}</p>
+              <p className='card-description'>{card.description}</p>
+            </div>
+            <div className="links-card">
               <a href={card.github} target="_blank" rel="noopener noreferrer">GitHub</a>
               <a href={card.website} target="_blank" rel="noopener noreferrer">Website</a>
             </div>
