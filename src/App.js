@@ -67,27 +67,27 @@ const Me = () => (
 
 
 const mlAiUrls = [
-  { videoUrl: "images/image.png", description: 'ML/AI Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
-  { videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', description: 'ML/AI Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
-  { videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4', description: 'ML/AI Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
+  { url: '', title: '', description: 'ML/AI Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
+  { url: '', title: '', description: 'ML/AI Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
+  { url: '', title: '', description: 'ML/AI Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
 ];
 
 const webDevUrls = [
-  { videoUrl: 'your-webdev-video-url-1.mp4', description: 'Web Dev Project 1', github: 'https://github.com/amitgupta-exe/loremipsum', website: 'https://amitgupta-exe.github.io/lipsumghpage/' },
-  { videoUrl: 'your-webdev-video-url-2.mp4', description: 'Web Dev Project 2', github: 'https://github.com/project2', website: '' },
-  { videoUrl: 'your-webdev-video-url-3.mp4', description: 'Web Dev Project 3', github: 'https://github.com/project3', website: '' },
+  { url: '', title: '', description: 'Web Dev Project 1', github: 'https://github.com/amitgupta-exe/loremipsum', website: 'https://amitgupta-exe.github.io/lipsumghpage/' },
+  { url: '', title: '', description: 'Web Dev Project 2', github: 'https://github.com/project2', website: '' },
+  { url: '', title: '', description: 'Web Dev Project 3', github: 'https://github.com/project3', website: '' },
 ];
 
 const gameDevUrls = [
-  { videoUrl: 'https://github.com/amitgupta-exe/amits-portfolio/blob/main/public/snakegamep5video.mp4', description: 'Snake Game p5', github: 'https://github.com/amitgupta-exe/snakegamep5', website: 'https://amitgupta-exe.github.io/snake-game-p5' },
-  { videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', description: 'Game Dev Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
-  { videoUrl: 'your-gamedev-video-url-3.mp4', description: 'Game Dev Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
+  { url: '', title: 'Snake Game p5', description: '', github: 'https://github.com/amitgupta-exe/snakegamep5', website: 'https://amitgupta-exe.github.io/snake-game-p5' },
+  { url: '', title: '', description: 'Game Dev Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
+  { url: '', title: '', description: 'Game Dev Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
 ];
 
 const dataAnalysisUrls = [
-  { videoUrl: 'your-data-analysis-video-url-1.mp4', description: 'Data Analysis Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
-  { videoUrl: 'your-data-analysis-video-url-2.mp4', description: 'Data Analysis Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
-  { videoUrl: 'your-data-analysis-video-url-3.mp4', description: 'Data Analysis Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
+  { url: '', title: '', description: 'Data Analysis Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
+  { url: '', title: '', description: 'Data Analysis Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
+  { url: '', title: '', description: 'Data Analysis Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
 ];
 
 const MLAI = () => <Section title="ML/AI" id="ml-ai" cards={mlAiUrls} />;
@@ -102,11 +102,11 @@ const Section = ({ title, id, cards }) => {
       <div className="vertical-sections">
         {cards.map((card) => (
           <div className="vertical-section" key={card.videoUrl}>
-            {/* <img src={card.videoUrl} alt="card" srcSet="" /> */}
+            <img src={card.videoUrl} alt="card" srcSet="" />
 
-              <video>
+              {/* <video>
                 <source src={card.videoUrl} type="video/mp4" />
-              </video>
+              </video> */}
 
             <p>{card.description}</p>
             <p className='project-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
