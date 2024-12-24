@@ -17,6 +17,8 @@ const Sidebar = () => {
         <li><a href="#me">Me</a></li>
         <li><a href="#ml-ai">ML/AI</a></li>
         <li><a href="#data-analysis">Data Analysis</a></li>
+        <li><a href="#webdev">Web Development</a></li>
+        <li><a href="#gamedev">Games (p5 js)</a></li>
       </ul>
     </nav>
   );
@@ -65,8 +67,8 @@ const Me = () => (
 );
 
 const webDevUrls = [
-  { url: '', title: 'Cryptonite', description: 'Encrypt/Decrypt - React, Node Modules', github: 'https://github.com/amitgupta-exe/loremipsum', website: 'https://amitgupta-exe.github.io/lipsumghpage/' },
-  { url: '', title: 'LoremIpsum', description: 'Multi typeface Lorem Ipsum - React, NLTK', github: 'https://github.com/amitgupta-exe/loremipsum', website: 'https://amitgupta-exe.github.io/lipsumghpage/' },
+  { url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/cryptonite.png', title: 'Cryptonite', description: 'Encrypt/Decrypt - React, Node Modules', github: 'https://github.com/amitgupta-exe/cryptonite', website: 'https://amitgupta-exe.github.io/lipsumghpage/' },
+  { url: '', title: 'LoremIpsum', description: 'Multi typeface Lorem Ipsum - React, NLTK', github: 'https://github.com/amitgupta-exe/loremipsum', website: 'https://amitgupta-exe.github.io/loremipsum/' },
   { url: '', title: '', description: 'Web Dev Project 3', github: 'https://github.com/project3', website: '' },
 ];
 

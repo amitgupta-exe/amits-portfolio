@@ -48,6 +48,8 @@ body {
     transition: color 0.3s;
     width: 100%;
     height: 100%;
+    display: grid;
+    place-items: center;
 }
 
 .sidebar a:hover {
