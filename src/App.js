@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.css';
 
+import { cardinfo } from './cardinfo';
+
 const App = () => {
   return (
     <div className="app">
@@ -66,36 +68,15 @@ const Me = () => (
   </section>
 );
 
-const webDevUrls = [
-  { url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/cryptonite.png', title: 'Cryptonite', description: 'Encrypt/Decrypt - React, Node Modules', github: 'https://github.com/amitgupta-exe/cryptonite', website: 'https://amitgupta-exe.github.io/lipsumghpage/' },
-  { url: '', title: 'LoremIpsum', description: 'Multi typeface Lorem Ipsum - React, NLTK', github: 'https://github.com/amitgupta-exe/loremipsum', website: 'https://amitgupta-exe.github.io/loremipsum/' },
-  { url: '', title: '', description: 'Web Dev Project 3', github: 'https://github.com/project3', website: '' },
-];
-
-const mlAiUrls = [
-  { url: '', title: '', description: 'ML/AI Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
-  { url: '', title: '', description: 'ML/AI Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
-  { url: '', title: '', description: 'ML/AI Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
-];
 
 
+const MLAI = () => <Section title="ML/AI" id="ml-ai" cards={cardinfo.mlAiUrls} />;
+const WebDev = () => <Section title="Web Development" id="webdev" cards={cardinfo.webDevUrls} />;
+const GameDev = () => <Section title="Game Development" id="gamedev" cards={cardinfo.gameDevUrls} />;
+const DataAnalysis = () => <Section title="Data Analysis" id="data-analysis" cards={cardinfo.dataAnalysisUrls} />;
 
-const gameDevUrls = [
-  { url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/snake.jpg', title: 'Snake Game p5', description: '', github: 'https://github.com/amitgupta-exe/snakegamep5', website: 'https://amitgupta-exe.github.io/snake-game-p5' },
-  { url: '', title: '', description: 'Game Dev Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
-  { url: '', title: '', description: 'Game Dev Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
-];
+console.log(cardinfo.mlAiUrls);
 
-const dataAnalysisUrls = [
-  { url: '', title: '', description: 'Data Analysis Project 1', github: 'https://github.com/project1', website: 'https://yourwebsite.com/project1' },
-  { url: '', title: '', description: 'Data Analysis Project 2', github: 'https://github.com/project2', website: 'https://yourwebsite.com/project2' },
-  { url: '', title: '', description: 'Data Analysis Project 3', github: 'https://github.com/project3', website: 'https://yourwebsite.com/project3' },
-];
-
-const MLAI = () => <Section title="ML/AI" id="ml-ai" cards={mlAiUrls} />;
-const WebDev = () => <Section title="Web Development" id="webdev" cards={webDevUrls} />;
-const GameDev = () => <Section title="Game Development" id="gamedev" cards={gameDevUrls} />;
-const DataAnalysis = () => <Section title="Data Analysis" id="data-analysis" cards={dataAnalysisUrls} />;
 
 const Section = ({ title, id, cards }) => {
   return (
