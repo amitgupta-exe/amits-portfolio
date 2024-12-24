@@ -8,6 +8,7 @@ const AIMLDL = () => {
 
     return (
         <>
+        
             {cardinfo.map((card) => {
                 return (
                     <Link target='_blank' to={card.url}>

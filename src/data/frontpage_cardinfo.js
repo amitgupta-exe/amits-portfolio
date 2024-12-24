@@ -49,14 +49,14 @@ export const cardinfo = {
     gameDevUrls: [
         {
             url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/snake.jpg',
-            title: 'p5.js',
+            title: 'Games in p5',
             description: 'Games and Visuals Using p5',
             github: 'https://github.com/amitgupta-exe/snakegamep5',
             website: 'https://amitgupta-exe.github.io/snake-game-p5'
         },
         {
             url: '',
-            title: 'OpenCV',
+            title: 'Visualization p5',
             description: 'Computer graphics using Pyton',
             github: 'https://github.com/project2',
             website: 'https://yourwebsite.com/project2'
@@ -73,22 +73,22 @@ export const cardinfo = {
     dataAnalysisUrls: [
         {
             url: '',
-            title: '',
-            description: 'ML/AI Project 1',
+            title: 'Exploratory Data Analysis',
+            description: 'Performed EDA on various datasets',
             github: 'https://github.com/project1',
             website: 'https://yourwebsite.com/project1'
         },
         {
             url: '',
-            title: '',
-            description: 'ML/AI Project 3',
+            title: 'Dashboards',
+            description: 'Created Dashboards Using Tableu and PowerBI',
             github: 'https://github.com/project3',
             website: 'https://yourwebsite.com/project3'
         },
         {
             url: '',
-            title: '',
-            description: 'ML/AI Project 2',
+            title: 'Youtube Data Analysis',
+            description: 'Data Analysis On live youtube Data',
             github: 'https://github.com/project2',
             website: 'https://yourwebsite.com/project2'
         },
