@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 
 const EDA = () => {
     return (
-        <div>
+        <main>
+            div.
             {cardinfo.map((card) => {
                 return (
                     <Link target='_blank' to={card.url}>
@@ -15,7 +16,7 @@ const EDA = () => {
                     </Link>
                 )
             })}
-        </div>
+        </main>
     )
 }
 

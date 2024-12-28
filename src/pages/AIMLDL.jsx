@@ -7,7 +7,7 @@ const AIMLDL = () => {
     console.log(cardinfo[0]);
 
     return (
-        <>
+        <main>
         
             {cardinfo.map((card) => {
                 return (
@@ -19,7 +19,7 @@ const AIMLDL = () => {
                     </Link>
                 )
             })}
-        </>
+        </main>
     )
 }
 

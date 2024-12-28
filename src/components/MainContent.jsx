@@ -7,7 +7,7 @@ const MainContent = () => {
     const Section = ({ title, id, cards }) => {
         return (
             <div className="section" id={id}>
-                <h2>{title}</h2>
+                <h2 className='section-title'>{title}</h2>
                 <div className="cards">
                     {cards.map((card) => (
                         <Link className="card" target={card.target} key={card.videoUrl} to={card.website}>

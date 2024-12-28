@@ -24,14 +24,14 @@ export const cardinfo = {
 
     mlAiUrls: [
         {
-            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/loremipsum.png',
+            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/aimldl.webp',
             title: 'AI, ML, DL',
             description: 'Various applications of machine learning and deep learning algorithms',
             github: 'https://github.com/project1',
             website: '/aimldl'
         },
         {
-            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/loremipsum.png',
+            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/eda.webp',
             title: 'Exploratory Data Analysis',
             description: 'Various applications of deep learning algorithms',
             github: 'https://github.com/project3',
