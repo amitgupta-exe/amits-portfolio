@@ -52,7 +52,7 @@ const MainContent = () => {
     const MLAI = () => <Section title="ML/AI" id="ml-ai" cards={cardinfo.mlAiUrls} />;
     const WebDev = () => <Section title="Web Development" id="webdev" cards={cardinfo.webDevUrls} />;
     const GameDev = () => <Section title="Computer Graphics" id="gamedev" cards={cardinfo.gameDevUrls} />;
-    const DataAnalysis = () => <Section title="Data Analysis" id="data-analysis" cards={cardinfo.dataAnalysisUrls} />;
+    // const DataAnalysis = () => <Section title="Data Analysis" id="data-analysis" cards={cardinfo.dataAnalysisUrls} />;
 
 
     const Footer = () => {
@@ -75,7 +75,7 @@ const MainContent = () => {
             <WebDev />
             <MLAI />
             <GameDev />
-            <DataAnalysis />
+            {/* <DataAnalysis /> */}
             <Footer />
         </main>
     )

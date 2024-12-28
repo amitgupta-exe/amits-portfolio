@@ -1,6 +1,7 @@
 import AIMLDL from "../pages/AIMLDL";
 import P5Visuals from "../pages/P5Visuals";
 import FrontPage from "../pages/FrontPage";
+import EDA from "../pages/EDA";
 
 const routes = [
     {
@@ -15,8 +16,8 @@ const routes = [
     },
     {
         title:"P5JS",
-        path:"/aimldl",
-        element:<P5Visuals/>
+        path:"/eda",
+        element:<EDA/>
     }
 ]
 

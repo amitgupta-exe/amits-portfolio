@@ -32,65 +32,45 @@ export const cardinfo = {
         },
         {
             url: '',
-            title: 'Real time Age Detection',
+            title: 'Exploratory Data Analysis',
             description: 'Various applications of deep learning algorithms',
             github: 'https://github.com/project3',
-            website: 'https://yourwebsite.com/project3'
+            website: '/eda'
         },
         {
             url: '',
-            title: 'Model Pipeline',
+            title: 'Youtube data Real TIme Dashboard',
             description: 'Connecting various open source models together to do amazing stuff',
             github: 'https://github.com/project2',
-            website: 'https://yourwebsite.com/project2'
+            website: 'https://yourwebsite.com/project2',
+            target: '_blank'
         },
     ],
 
     gameDevUrls: [
         {
             url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/snake.jpg',
-            title: 'Games in p5',
-            description: 'Games and Visuals Using p5',
+            title: 'Snake Game',
+            description: 'Snake Game using p5.js',
             github: 'https://github.com/amitgupta-exe/snakegamep5',
-            website: 'https://amitgupta-exe.github.io/snake-game-p5'
+            website: 'https://amitgupta-exe.github.io/snake-game-p5',
+            target: '_blank'
         },
         {
             url: '',
-            title: 'Visualization p5',
-            description: 'Computer graphics using Pyton',
-            github: 'https://github.com/project2',
-            website: 'https://yourwebsite.com/project2'
+            title: 'Sierpinksi Triangle',
+            description: 'Visualization of the sierpinski Gasket using p5.js',
+            github: 'https://github.com/amitgupta-exe/sierpinski',
+            website: 'https://amitgupta-exe.github.io/sierpinski/',
+            target: '_blank'
         },
         {
             url: '',
-            title: 'ThreeJS',
-            description: '3D Visuals using Three.js',
-            github: 'https://github.com/project3',
-            website: 'https://yourwebsite.com/project3'
-        },
-    ],
-
-    dataAnalysisUrls: [
-        {
-            url: '',
-            title: 'Exploratory Data Analysis',
-            description: 'Performed EDA on various datasets',
-            github: 'https://github.com/project1',
-            website: 'https://yourwebsite.com/project1'
-        },
-        {
-            url: '',
-            title: 'Dashboards',
-            description: 'Created Dashboards Using Tableu and PowerBI',
-            github: 'https://github.com/project3',
-            website: 'https://yourwebsite.com/project3'
-        },
-        {
-            url: '',
-            title: 'Youtube Data Analysis',
-            description: 'Data Analysis On live youtube Data',
-            github: 'https://github.com/project2',
-            website: 'https://yourwebsite.com/project2'
+            title: 'Flappy Bird',
+            description: 'Flappy Bird Game using p5.js',
+            github: 'https://github.com/amitgupta-exe/flappy-bird-p5',
+            website: 'https://amitgupta-exe.github.io/flappy-bird-p5/',
+            target: '_blank'
         },
     ],
 }
