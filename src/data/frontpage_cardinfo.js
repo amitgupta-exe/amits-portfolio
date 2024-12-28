@@ -24,21 +24,21 @@ export const cardinfo = {
 
     mlAiUrls: [
         {
-            url: '',
+            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/loremipsum.png',
             title: 'AI, ML, DL',
             description: 'Various applications of machine learning and deep learning algorithms',
             github: 'https://github.com/project1',
             website: '/aimldl'
         },
         {
-            url: '',
+            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/loremipsum.png',
             title: 'Exploratory Data Analysis',
             description: 'Various applications of deep learning algorithms',
             github: 'https://github.com/project3',
             website: '/eda'
         },
         {
-            url: '',
+            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/loremipsum.png',
             title: 'Youtube data Real TIme Dashboard',
             description: 'Connecting various open source models together to do amazing stuff',
             github: 'https://github.com/project2',
@@ -57,7 +57,7 @@ export const cardinfo = {
             target: '_blank'
         },
         {
-            url: '',
+            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/sierpinskitriangle.png',
             title: 'Sierpinksi Triangle',
             description: 'Visualization of the sierpinski Gasket using p5.js',
             github: 'https://github.com/amitgupta-exe/sierpinski',
@@ -65,7 +65,7 @@ export const cardinfo = {
             target: '_blank'
         },
         {
-            url: '',
+            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/flappybird.png',
             title: 'Flappy Bird',
             description: 'Flappy Bird Game using p5.js',
             github: 'https://github.com/amitgupta-exe/flappy-bird-p5',
