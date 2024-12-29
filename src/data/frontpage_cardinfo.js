@@ -38,7 +38,7 @@ export const cardinfo = {
             website: '/eda'
         },
         {
-            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/loremipsum.png',
+            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/yt.webp',
             title: 'Youtube data Real TIme Dashboard',
             description: 'Connecting various open source models together to do amazing stuff',
             github: 'https://github.com/project2',

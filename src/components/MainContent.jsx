@@ -13,12 +13,14 @@ const MainContent = () => {
                         <Link className="card" target={card.target} key={card.videoUrl} to={card.website}>
                             <img className='card-display' src={card.url} alt="card" srcSet="" />
                             <div>
-                                <p className='card-title'>{card.title}</p>
-                                <p className='card-description'>{card.description}</p>
-                            </div>
-                            <div className="links-card">
-                                <a href={card.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href={card.website} target="_blank" rel="noopener noreferrer">Website</a>
+                                <div>
+                                    <p className='card-title'>{card.title}</p>
+                                    <p className='card-description'>{card.description}</p>
+                                </div>
+                                <div className="links-card">
+                                    <a href={card.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    <a href={card.website} target="_blank" rel="noopener noreferrer">Website</a>
+                                </div>
                             </div>
                         </Link>
                     ))}
