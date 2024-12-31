@@ -11,7 +11,9 @@ const MainContent = () => {
                 <div className="cards">
                     {cards.map((card) => (
                         <Link className="card" target={card.target} key={card.videoUrl} to={card.website}>
-                            <img className='card-display' src={card.url} alt="card" srcSet="" />
+                            <div className='card-display'>
+                                <img  src={card.url} alt="card" srcSet="" />
+                            </div>
                             <div>
                                 <div>
                                     <p className='card-title'>{card.title}</p>
