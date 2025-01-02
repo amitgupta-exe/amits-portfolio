@@ -33,14 +33,14 @@ export const cardinfo = {
         {
             url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/eda.webp',
             title: 'Exploratory Data Analysis',
-            description: 'Various applications of deep learning algorithms',
+            description: 'Performing Exploratory Data Analysis on various real world datasets',
             github: 'https://github.com/project3',
             website: '/eda'
         },
         {
             url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/yt.webp',
-            title: 'Youtube data Real TIme Dashboard',
-            description: 'Connecting various open source models together to do amazing stuff',
+            title: 'Implementation of Federated Learning on Brain Tumor Classification',
+            description: 'Using Federated Learning to improve privacy of sensitive data to train a CNN Model for brain tumor classification ',
             github: 'https://github.com/project2',
             website: 'https://yourwebsite.com/project2',
             target: '_blank'
