@@ -1,32 +1,22 @@
-import React from 'react';
-import './styles.css';
-import { HashRouter, Routes, Route, Link } from 'react-router-dom';
-import { cardinfo } from './data/frontpage_cardinfo';
-import routes from './data/routes';
-
-import FrontPage from './pages/FrontPage';
-import SideNavigation from './components/SideNavigation';
+import React, { useEffect } from 'react';
+import './styles/modern.css';
+import { PortfolioProvider } from './context/PortfolioContext';
+import ResumeMain from './components/ResumeMain';
 
 const App = () => {
-  return (
-    <HashRouter>
-      <div className="app">
-        <Routes>
+  useEffect(() => {
+    // Apply theme on app load
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-theme');
+    }
+  }, []);
 
-          {routes.map(({ path, element }, index) => (
-            <Route
-              key={index}
-              path={path}
-              element={
-                element
-              }
-            />
-          ))}
-        </Routes>
-      </div>
-    </HashRouter>
+  return (
+    <PortfolioProvider>
+      <ResumeMain />
+    </PortfolioProvider>
   );
 };
-
 
 export default App;

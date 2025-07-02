@@ -1,76 +1,115 @@
+import { getImageUrl } from '../utils/helpers';
+import { ProjectTypes } from '../types';
+
 export const cardinfo = {
-
     webDevUrls: [
-
         {
-            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/cryptonite.png',
+            id: 'cryptonite',
+            url: getImageUrl('cryptonite.png'),
             title: 'Cryptonite',
-            description: 'Encrypt/Decrypt - React, Node Modules',
+            description: 'A modern encryption/decryption tool built with React. Features multiple encryption algorithms and a sleek user interface.',
             github: 'https://github.com/amitgupta-exe/cryptonite',
             website: 'https://amitgupta-exe.github.io/cryptonite/',
-            target: '_blank'
+            target: '_blank',
+            type: ProjectTypes.WEB_DEV,
+            technologies: ['React', 'JavaScript', 'CSS3', 'Cryptography'],
+            featured: true,
+            createdDate: '2023-08-15'
         },
-
         {
-            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/loremipsum.png',
-            title: 'LoremIpsum',
-            description: 'Multi typeface Lorem Ipsum - React, NLTK',
+            id: 'loremipsum',
+            url: getImageUrl('loremipsum.png'),
+            title: 'LoremIpsum Generator',
+            description: 'An advanced Lorem Ipsum generator with multiple typefaces and customization options. Powered by React and NLTK.',
             github: 'https://github.com/amitgupta-exe/loremipsum',
             website: 'https://amitgupta-exe.github.io/loremipsum/',
-            target: '_blank'
-
+            target: '_blank',
+            type: ProjectTypes.WEB_DEV,
+            technologies: ['React', 'NLTK', 'Python', 'JavaScript'],
+            featured: false,
+            createdDate: '2023-09-20'
         },
     ],
 
     mlAiUrls: [
         {
-            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/aimldl.webp',
-            title: 'AI, ML, DL',
-            description: 'Various applications of machine learning and deep learning algorithms',
-            github: 'https://github.com/project1',
-            website: '/aimldl'
+            id: 'aimldl',
+            url: getImageUrl('aimldl.webp'),
+            title: 'AI, ML, DL Portfolio',
+            description: 'A comprehensive collection of machine learning and deep learning projects showcasing various algorithms and applications.',
+            github: 'https://github.com/amitgupta-exe/ml-projects',
+            website: '/aimldl',
+            type: ProjectTypes.ML_AI,
+            technologies: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn'],
+            featured: true,
+            createdDate: '2023-07-10'
         },
         {
-            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/eda.webp',
+            id: 'eda',
+            url: getImageUrl('eda.webp'),
             title: 'Exploratory Data Analysis',
-            description: 'Performing Exploratory Data Analysis on various real world datasets',
-            github: 'https://github.com/project3',
-            website: '/eda'
+            description: 'In-depth exploratory data analysis on various real-world datasets with interactive visualizations and insights.',
+            github: 'https://github.com/amitgupta-exe/eda-projects',
+            website: '/eda',
+            type: ProjectTypes.EDA,
+            technologies: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'Plotly'],
+            featured: true,
+            createdDate: '2023-06-05'
         },
         {
-            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/yt.webp',
-            title: 'Implementation of Federated Learning on Brain Tumor Classification',
-            description: 'Using Federated Learning to improve privacy of sensitive data to train a CNN Model for brain tumor classification ',
-            github: 'https://github.com/project2',
+            id: 'federated-learning',
+            url: getImageUrl('fedbt.webp'),
+            title: 'Federated Learning for Brain Tumor Classification',
+            description: 'Implementation of federated learning techniques to improve privacy of sensitive medical data while training CNN models for brain tumor classification.',
+            github: 'https://github.com/amitgupta-exe/federated-brain-tumor',
             website: 'https://yourwebsite.com/project2',
-            target: '_blank'
+            target: '_blank',
+            type: ProjectTypes.ML_AI,
+            technologies: ['Python', 'TensorFlow', 'Federated Learning', 'CNN', 'Medical Imaging'],
+            featured: true,
+            createdDate: '2023-10-12'
         },
     ],
 
     gameDevUrls: [
         {
-            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/snake.jpg',
+            id: 'snake-game',
+            url: getImageUrl('snake.jpg'),
             title: 'Snake Game',
-            description: 'Snake Game using p5.js',
+            description: 'Classic Snake game reimagined with modern graphics and smooth gameplay using p5.js framework.',
             github: 'https://github.com/amitgupta-exe/snakegamep5',
             website: 'https://amitgupta-exe.github.io/snake-game-p5',
-            target: '_blank'
+            target: '_blank',
+            type: ProjectTypes.GAME_DEV,
+            technologies: ['p5.js', 'JavaScript', 'HTML5 Canvas'],
+            featured: false,
+            createdDate: '2023-05-20'
         },
         {
-            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/sierpinskitriangle.png',
-            title: 'Sierpinksi Triangle',
-            description: 'Visualization of the sierpinski Gasket using p5.js',
+            id: 'sierpinski-triangle',
+            url: getImageUrl('sierpinskitriangle.png'),
+            title: 'Sierpinski Triangle Visualization',
+            description: 'Interactive visualization of the Sierpinski gasket fractal with real-time generation and customizable parameters.',
             github: 'https://github.com/amitgupta-exe/sierpinski',
             website: 'https://amitgupta-exe.github.io/sierpinski/',
-            target: '_blank'
+            target: '_blank',
+            type: ProjectTypes.GAME_DEV,
+            technologies: ['p5.js', 'JavaScript', 'Mathematical Visualization'],
+            featured: true,
+            createdDate: '2023-04-18'
         },
         {
-            url: 'https://raw.githubusercontent.com/amitgupta-exe/amits-portfolio/refs/heads/v1/public/assets/images/flappybird.png',
-            title: 'Flappy Bird',
-            description: 'Flappy Bird Game using p5.js',
+            id: 'flappy-bird',
+            url: getImageUrl('flappybird.png'),
+            title: 'Flappy Bird Clone',
+            description: 'A faithful recreation of the popular Flappy Bird game with enhanced graphics and smooth physics.',
             github: 'https://github.com/amitgupta-exe/flappy-bird-p5',
             website: 'https://amitgupta-exe.github.io/flappy-bird-p5/',
-            target: '_blank'
+            target: '_blank',
+            type: ProjectTypes.GAME_DEV,
+            technologies: ['p5.js', 'JavaScript', 'Game Physics'],
+            featured: false,
+            createdDate: '2023-03-25'
         },
     ],
 }
